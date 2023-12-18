@@ -6,8 +6,8 @@ import * as yup from "yup";
 import { shades } from "../../theme";
 import Payment from "./Payment";
 import Shipping from "./Shipping";
+import Card from "./Card";
 import { loadStripe } from "@stripe/stripe-js";
-
 
 
 //remove stripe payment need to add payment page
@@ -15,11 +15,13 @@ const stripePromise = loadStripe(
   "pk_test_51LgU7yConHioZHhlAcZdfDAnV9643a7N1CMpxlKtzI1AUWLsRyrord79GYzZQ6m8RzVnVQaHsgbvN1qSpiDegoPi006QkO0Mlc"
 );
 
+
 const Checkout = () => {
   const [activeStep, setActiveStep] = useState(0);
   const cart = useSelector((state) => state.cart.cart);
   const isFirstStep = activeStep === 0;
   const isSecondStep = activeStep === 1;
+  const isThirdStep = activeStep === 2;
 
   const handleFormSubmit = async (values, actions) => {
     setActiveStep(activeStep + 1);
@@ -33,6 +35,10 @@ const Checkout = () => {
     }
 
     if (isSecondStep) {
+
+    }
+
+    if(isThirdStep){
       makePayment(values);
     }
 
@@ -70,6 +76,9 @@ const Checkout = () => {
         <Step>
           <StepLabel>Payment</StepLabel>
         </Step>
+        <Step>
+          <StepLabel>Card</StepLabel>
+        </Step>
       </Stepper>
       <Box>
         <Formik
@@ -99,6 +108,16 @@ const Checkout = () => {
               )}
               {isSecondStep && (
                 <Payment
+                  values={values}
+                  errors={errors}
+                  touched={touched}
+                  handleBlur={handleBlur}
+                  handleChange={handleChange}
+                  setFieldValue={setFieldValue}
+                />
+              )}
+              {isThirdStep && (
+                <Card
                   values={values}
                   errors={errors}
                   touched={touched}
@@ -138,7 +157,7 @@ const Checkout = () => {
                     padding: "15px 40px",
                   }}
                 >
-                  {!isSecondStep ? "Next" : "Place Order"}
+                  {!isThirdStep ? "Next" : "Place Order"}
                 </Button>
               </Box>
             </form>
@@ -157,8 +176,8 @@ const initialValues = {
     street1: "",
     street2: "",
     city: "",
-    state: "",
-    zipCode: "",
+    province: "",
+    postalCode: "",
   },
   shippingAddress: {
     isSameAddress: true,
@@ -168,8 +187,14 @@ const initialValues = {
     street1: "",
     street2: "",
     city: "",
-    state: "",
-    zipCode: "",
+    province: "",
+    postalCode: "",
+  },
+  cardInfo: {
+    cardNumber: "",
+    expirationDate: "",
+    securityCode: "",
+    cardName: "",
   },
   email: "",
   phoneNumber: "",
@@ -184,8 +209,8 @@ const checkoutSchema = [
       street1: yup.string().required("required"),
       street2: yup.string(),
       city: yup.string().required("required"),
-      state: yup.string().required("required"),
-      zipCode: yup.string().required("required"),
+      province: yup.string().required("required"),
+      postalCode: yup.string().required("required"),
     }),
     shippingAddress: yup.object().shape({
       isSameAddress: yup.boolean(),
@@ -210,11 +235,11 @@ const checkoutSchema = [
         is: false,
         then: yup.string().required("required"),
       }),
-      state: yup.string().when("isSameAddress", {
+      province: yup.string().when("isSameAddress", {
         is: false,
         then: yup.string().required("required"),
       }),
-      zipCode: yup.string().when("isSameAddress", {
+      postalCode: yup.string().when("isSameAddress", {
         is: false,
         then: yup.string().required("required"),
       }),
@@ -223,6 +248,15 @@ const checkoutSchema = [
   yup.object().shape({
     email: yup.string().required("required"),
     phoneNumber: yup.string().required("required"),
+  }),
+  yup.object().shape({
+    cardInfo: yup.object().shape({
+      cardNumber: yup.string().required("required"),
+      expirationDate: yup.string().required("required"),
+      securityCode: yup.string().required("required"),
+      cardName: yup.string().required("required"),
+
+    }),
   }),
 ];
 

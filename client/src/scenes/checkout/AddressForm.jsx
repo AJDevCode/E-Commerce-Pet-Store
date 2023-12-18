@@ -109,25 +109,25 @@ const AddressForm = ({
       <TextField
         fullWidth
         type="text"
-        label="State"
+        label="Province"
         onBlur={handleBlur}
         onChange={handleChange}
-        value={values.state}
-        name={formattedName("state")}
-        error={formattedError("state")}
-        helperText={formattedHelper("state")}
+        value={values.province}
+        name={formattedName("province")}
+        error={formattedError("province")}
+        helperText={formattedHelper("province")}
         sx={{ gridColumn: "1fr" }}
       />
       <TextField
         fullWidth
         type="text"
-        label="Zip Code"
+        label="Postal Code"
         onBlur={handleBlur}
         onChange={handleChange}
-        value={values.zipCode}
-        name={formattedName("zipCode")}
-        error={formattedError("zipCode")}
-        helperText={formattedHelper("zipCode")}
+        value={values.postalCode}
+        name={formattedName("postalCode")}
+        error={formattedError("postalCode")}
+        helperText={formattedHelper("postalCode")}
         sx={{ gridColumn: "1fr" }}
       />
     </Box>
