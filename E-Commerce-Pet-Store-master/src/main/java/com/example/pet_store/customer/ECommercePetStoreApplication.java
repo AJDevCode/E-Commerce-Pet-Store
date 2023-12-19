@@ -1,4 +1,4 @@
-package com.example.pet_store;
+package com.example.pet_store.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

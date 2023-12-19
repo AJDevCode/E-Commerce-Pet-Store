@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb29fccc-e5f6-430c-b2db-3648a4340ef0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/customer/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/customer/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/customer/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/ECommercePetStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store/customer/ECommercePetStoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/test/java/com/example/pet_store/ECommercePetStoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Pet-Store-master/src/test/java/com/example/pet_store/ECommercePetStoreApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2ZbYu3KDdBuPkkvUwSomWmGEKFI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CustomerController.executor": "Run",
+    "Spring Boot.ECommercePetStoreApplication.executor": "Run",
+    "Spring Boot.ItemController.executor": "Run",
+    "git-widget-placeholder": "AlexeyTesting",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "F:/Git_projects/Courses/4413/E-Commerce-Pet-Store/E-Commerce-Pet-Store-master/src/main/java/com/example/pet_store",
+    "last_opened_file_path": "F:/Git_projects/Courses/4413/E-Commerce-Pet-Store",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.pet_store.customer" />
+      <recent name="com.example.pet_store.item" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="E-Commerce-Pet-Store" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="E-Commerce-Pet-Store" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-jbr-17.0.9-3183f394aec4-0cf83cf7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb29fccc-e5f6-430c-b2db-3648a4340ef0" name="Changes" comment="" />
+      <created>1702692465148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702692465148</updated>
+      <workItem from="1702692466201" duration="196000" />
+      <workItem from="1702692678980" duration="2094000" />
+      <workItem from="1702872072817" duration="439000" />
+      <workItem from="1702872529914" duration="27000" />
+      <workItem from="1702872603418" duration="10053000" />
+      <workItem from="1702934784283" duration="3386000" />
+      <workItem from="1702938556214" duration="5449000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
