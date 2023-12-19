@@ -79,11 +79,9 @@ class Auth {
       "firstName": firstName,
       "lastName": lastName,
     }
-
     // Create request
-    const request = new Request('localhost:8080/api/customers/add', {
+    const request = new Request('http://localhost:8000/scenes/Account/register', {
       method: 'POST',
-      headers:{"Content-Type":"application/json"},
       body: JSON.stringify(formData),
     });
     // Fetch request

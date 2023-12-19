@@ -18,10 +18,14 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String link;
-    private int qty;
-    private boolean newArrive;
-    private boolean bestSeller;
-    private float rating;
-
+    private String shortDescription;
+    private String longDescription;
+    private int price;
+    private String category;
+    private String createdAt;
+    private String updatedAt;
+    private String publishedAt;
+    private int image; //image-ID
+    private String createdBy;
+    private String updatedBy;
 }
